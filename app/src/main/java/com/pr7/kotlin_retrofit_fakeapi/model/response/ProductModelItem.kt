@@ -1,4 +1,4 @@
-package com.pr7.kotlin_retrofit_fakeapi.model
+package com.pr7.kotlin_retrofit_fakeapi.model.response
 
 data class ProductModelItem(
     val category: String,

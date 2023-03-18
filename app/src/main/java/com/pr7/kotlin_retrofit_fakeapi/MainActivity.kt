@@ -1,6 +1,5 @@
 package com.pr7.kotlin_retrofit_fakeapi
 
-import android.annotation.SuppressLint
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -10,7 +9,7 @@ import android.widget.ProgressBar
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
-import com.pr7.kotlin_retrofit_fakeapi.model.ProductModelItem
+import com.pr7.kotlin_retrofit_fakeapi.model.response.ProductModelItem
 import com.pr7.kotlin_retrofit_fakeapi.retrofit.RetrofitInstance.api
 import retrofit2.Call
 import retrofit2.Callback
@@ -30,18 +29,17 @@ class MainActivity : AppCompatActivity() {
         progressBar=findViewById(R.id.progressbar1)
         swipeRefresh=findViewById(R.id.swiperefresh)
 
-        getAllProducts()
+
         swipeRefresh.setOnRefreshListener {
             Log.i("PR77777", "onRefresh called from SwipeRefreshLayout")
-
-            // This method performs the actual data-refresh operation.
-            // The method calls setRefreshing(false) when it's finished.
-            getAllProducts()
 
         }
 
 
     }
+
+
+
 
 
     fun getAllProducts(){

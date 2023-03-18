@@ -9,7 +9,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import com.pr7.kotlin_retrofit_fakeapi.model.ProductModelItem
+import com.pr7.kotlin_retrofit_fakeapi.model.response.ProductModelItem
 
 
 class ProductAdapter constructor(
